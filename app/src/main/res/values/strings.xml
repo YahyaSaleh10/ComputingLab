@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MobileComputingProject</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="below_welcome">if you already have an account,log in</string>
+    <string name="log_in_btn">LOG IN</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="below_create_account">if you do not already have an account</string>
+    <string name="you_have_an_account_login">You Have An Account? </string>
+    <string name="you_dont_have_an_account_sign_up">You Dont Have An Account? </string>
+</resources>
