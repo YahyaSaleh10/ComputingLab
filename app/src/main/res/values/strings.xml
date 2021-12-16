@@ -1,10 +1,23 @@
 <resources>
-    <string name="app_name">MobileComputingProject</string>
+
+    <string-array name="array_name">
+        <item>fruit</item>
+        <item>carbohydrates</item>
+        <item>vegetables</item>
+        <item>fish</item>
+    </string-array>
+
+    <string name="app_name">BMI Analyzer</string>
     <string name="welcome_back">Welcome Back</string>
     <string name="below_welcome">if you already have an account,log in</string>
     <string name="log_in_btn">LOG IN</string>
     <string name="create_new_account">Create New Account</string>
     <string name="below_create_account">if you do not already have an account</string>
     <string name="you_have_an_account_login">You Have An Account? </string>
-    <string name="you_dont_have_an_account_sign_up">You Dont Have An Account? </string>
+    <string name="you_dont_have_an_account_sign_up">You Don\'t Have An Account? </string>
+    <string name="complete_your_information">Complete Your + "\n" + Information</string>
+    <string name="title_activity_new_record">NewRecordActivity</string>
+    <string name="home_activity_tv_logout"><u>Logout</u></string>
+
+
 </resources>

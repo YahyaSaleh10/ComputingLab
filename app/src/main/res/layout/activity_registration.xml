@@ -97,6 +97,8 @@
         android:text="CREATE"
         android:textSize="18dp"
         android:textStyle="bold"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
@@ -119,18 +121,20 @@
         android:id="@+id/password_image_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="showOrHidePassword"
         app:layout_constraintBottom_toBottomOf="@+id/password"
         app:layout_constraintEnd_toEndOf="@+id/password"
         app:layout_constraintTop_toBottomOf="@+id/email_ed"
         app:srcCompat="@drawable/hide_icon" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/login_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
+        android:onClick="loginTVClicked"
         android:padding="2dp"
-        android:textColor="#BC03E5D2"
+        android:textColor="@color/blue"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
         app:layout_constraintStart_toEndOf="@+id/textView2" />
 

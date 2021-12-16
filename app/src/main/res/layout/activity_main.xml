@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:gravity="center"
     android:background="@drawable/ic_splash">
 
-    <TextView
-        android:id="@+id/next_tv"
+    <Button
+        android:id="@+id/next_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -16,8 +17,8 @@
         android:text="Next"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColor="@color/white"
-        android:background="@color/blue"
+        android:textColor="@color/blue"
+        android:backgroundTint="@color/white"
         android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

@@ -44,13 +44,14 @@
         app:layout_constraintTop_toBottomOf="@+id/below_welcome_tv" />
 
     <EditText
-        android:id="@+id/password_ed"
+        android:id="@+id/password_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/blue"
         android:hint="password"
         android:inputType="textPassword"
+        android:password="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/username_et"
@@ -65,8 +66,10 @@
         android:textSize="18dp"
         android:textStyle="bold"
         android:fadingEdge="vertical"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         android:backgroundTint="@color/blue"
-        app:layout_constraintTop_toBottomOf="@+id/password_ed"
+        app:layout_constraintTop_toBottomOf="@+id/password_et"
         tools:layout_editor_absoluteX="16dp" />
 
     <TextView
@@ -76,31 +79,35 @@
         android:layout_marginTop="12dp"
         android:text="@string/you_dont_have_an_account_sign_up"
         android:textColor="@color/black"
-        android:textSize="18dp"
+        android:textSize="19dp"
         app:layout_constraintEnd_toEndOf="@+id/login_btn"
-        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/login_btn"
         app:layout_constraintTop_toBottomOf="@+id/login_btn" />
 
     <ImageView
-        android:id="@+id/view_image"
+        android:id="@+id/show_hide_password"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:src="@drawable/hide_icon"
+        android:onClick="showOrHidePassword"
         android:scaleType="centerCrop"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintBottom_toBottomOf="@+id/password_ed"
-        app:layout_constraintEnd_toEndOf="@+id/password_ed"
-        app:layout_constraintTop_toTopOf="@+id/password_ed" />
+        app:layout_constraintBottom_toBottomOf="@+id/password_et"
+        app:layout_constraintEnd_toEndOf="@+id/password_et"
+        app:layout_constraintTop_toTopOf="@+id/password_et" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="sigUpTVClicked"
         android:text="Sign Up"
-        android:textSize="18dp"
         android:textColor="@color/blue"
+        android:textSize="18dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/sing_up_tv"
+        app:layout_constraintEnd_toEndOf="@+id/login_btn"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/sing_up_tv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
